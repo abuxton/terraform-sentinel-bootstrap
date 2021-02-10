@@ -12,10 +12,9 @@ The structure also includes;
 ## Useful links
 
 - https://www.terraform.io/docs/cloud/sentinel/index.html
-- https://www.terraform.io/docs/cloud/sentinel/index.html
 - https://www.terraform.io/docs/cloud/sentinel/sentinel-tf-012.html
 - https://www.terraform.io/docs/cloud/sentinel/import/index.html
-- https://www.terraform.io/docs/cloud/sentinel/examples.html
+
 
 ### Development and testing
 
@@ -24,4 +23,9 @@ The structure also includes;
 - https://docs.hashicorp.com/sentinel/commands/test
 - https://medium.com/hashicorp-engineering/automating-sentinel-cli-policy-tests-with-gitlab-ci-cd-51b7d2b45e3e
   - https://gitlab.com/kawsark/sentinel-policy-sets-for-tfc
-- ./.github/workflows/sentinel.workflow
+- `github/workflows/sentinel.workflow`
+
+### example code 
+
+- https://github.com/hashicorp/terraform-guides
+- https://www.terraform.io/docs/cloud/sentinel/examples.html
