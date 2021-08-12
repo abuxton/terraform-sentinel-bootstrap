@@ -7,10 +7,10 @@ resource "tfe_policy_set" "example" {
   #policies_path = "policies/my-policy-set"
   workspace_ids = [var.tfe_workspace]
 
-  vcs_repo {
-    identifier         = "{var.user_name}/{var.vcs-project-name}"
-    branch             = "main"
-    ingress_submodules = false
-    oauth_token_id     = var.tfe_oauth_client.test.id
-  }
+#   vcs_repo {
+#     identifier         = "{var.vcs_user_name}/{var.vcs_project_name}"
+#     branch             = "main"
+#     ingress_submodules = false
+#     oauth_token_id     = var.tfe_oauth_client.test.id
+#   }
 }
