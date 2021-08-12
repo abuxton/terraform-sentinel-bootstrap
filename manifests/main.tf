@@ -8,7 +8,7 @@ resource "tfe_policy_set" "example" {
   workspace_ids = [var.tfe_workspace]
 
   vcs_repo {
-    identifier         = "{var.org_name}/{var.vcs-project-name}"
+    identifier         = "{var.user_name}/{var.vcs-project-name}"
     branch             = "main"
     ingress_submodules = false
     oauth_token_id     = var.tfe_oauth_client.test.id
