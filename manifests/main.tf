@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/policy_set
 
 resource "tfe_policy_set" "example" {
-  name          = "var.policy.name"
+  name          = "var.policy_name"
   description   = "An example policy set"
   organization  = var.org_name
   #policies_path = "policies/my-policy-set"
