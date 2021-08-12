@@ -5,7 +5,7 @@ resource "tfe_policy_set" "example" {
   description   = "An example policy set"
   organization  = var.org_name
   #policies_path = "policies/my-policy-set"
-  workspace_ids = [var.tfe_workspace.test.id]
+  workspace_ids = [var.tfe_workspace]
 
   vcs_repo {
     identifier         = "{var.org_name}/{var.vcs-project-name}"
