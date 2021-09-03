@@ -24,6 +24,7 @@ The structure also includes;
 - https://medium.com/hashicorp-engineering/automating-sentinel-cli-policy-tests-with-gitlab-ci-cd-51b7d2b45e3e
   - https://gitlab.com/kawsark/sentinel-policy-sets-for-tfc
 - `github/workflows/sentinel.workflow`
+- https://learn.hashicorp.com/tutorials/terraform/sentinel-install?in=terraform/policy
 
 ### example code 
 
