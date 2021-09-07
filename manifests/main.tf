@@ -3,9 +3,10 @@
 resource "tfe_policy_set" "example" {
   name          = "example_policy"
   description   = "An example policy set"
+  global        = var.global ? true : false
   organization  = var.org_name
   #policies_path = "policies/my-policy-set"
-  workspace_ids = [var.tfe_workspace]
+  workspace_ids = var.global ? [] : var.organizations_workspace_ids 
 
 #   vcs_repo {
 #     identifier         = "{var.vcs_user_name}/{var.vcs_project_name}"
