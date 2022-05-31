@@ -1,5 +1,6 @@
 # Sentinel Bootstrap repository
 
+test
 This repository is a stripped down repository for bootstrapping Sentinel for Terraform Enterprise (TFE), it includes an example policy and tests with suggested structure.
 
 The structure also includes;
