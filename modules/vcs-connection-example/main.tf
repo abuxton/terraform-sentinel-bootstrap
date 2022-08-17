@@ -11,6 +11,6 @@ resource "tfe_policy_set" "default" {
     identifier         = "{var.vcs_user_name}/{var.vcs_project_name}"
     branch             = "main"
     ingress_submodules = false
-    oauth_token_id     = var.tfe_oauth_client.test.id
+    oauth_token_id     = var.tfe_oauth_client_id
   }
 }
