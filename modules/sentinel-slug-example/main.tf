@@ -1,4 +1,5 @@
 # https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/policy_set
+
 resource "tfe_policy_set" "default" {
   name         = "global_example_local_policy"
   description  = "An example policy set uploaded from local slug"
