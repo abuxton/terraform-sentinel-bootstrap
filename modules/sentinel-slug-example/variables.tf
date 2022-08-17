@@ -1,6 +1,10 @@
 variable "org_name" {
   type = string
 }
+
+variable "policies_path" {
+  type = string
+}
 variable "organizations_workspace_ids" {
   type    = list(string)
   default = []

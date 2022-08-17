@@ -7,6 +7,6 @@ terraform {
   }
 }
 
-provider "tfe" {
-  # Configuration options
-}
+# provider "tfe" {
+#   # Configuration options
+# }
