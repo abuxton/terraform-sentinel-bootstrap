@@ -15,4 +15,6 @@ variable "tfe_slug_data" {
   type        = map(any)
   default     = null
   description = "(optional) describe your variable"
+  nullable    = true
+
 }
