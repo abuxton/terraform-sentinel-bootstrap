@@ -3,18 +3,13 @@ variable "org_name" {
 }
 variable "organizations_workspace_ids" {
   type    = list(string)
-  default = null
-}
-
-variable "global" {
-  type    = bool
-  default = false
+  default = []
 }
 
 variable "tfe_slug_data" {
   type        = map(any)
   default     = null
-  description = "(optional) describe your variable"
+  description = "(optional) tfe_slug data object"
   nullable    = true
 
 }

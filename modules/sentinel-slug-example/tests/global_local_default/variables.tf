@@ -7,7 +7,4 @@ variable "organizations_workspace_ids" {
   default = null
 }
 
-variable "global" {
-  type    = bool
-  default = false
-}
+
