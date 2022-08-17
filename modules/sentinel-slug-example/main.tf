@@ -1,14 +1,13 @@
 # https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/policy_set
-#add a comment
 
-resource "tfe_policy_set" "example" {
-  name         = "example_policy"
-  description  = "An example policy set"
-  global       = var.global ? true : false
+resource "tfe_policy_set" "default" {
+  name         = "global_example_local_policy"
+  description  = "An example policy set uploaded from local slug"
   organization = var.org_name
-  #policies_path = "policies/my-policy-set"
-  workspace_ids = var.global ? [] : var.organizations_workspace_ids
-
+  #  policies_path = var.policies_path
+  global = true
+  #workspace_ids = var.organizations_workspace_ids
+  slug = var.tfe_slug_data
   #   vcs_repo {
   #     identifier         = "{var.vcs_user_name}/{var.vcs_project_name}"
   #     branch             = "main"

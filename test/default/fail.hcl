@@ -1,0 +1,11 @@
+test {
+  rules = {
+     main = false
+   }
+}
+
+
+
+
+
+

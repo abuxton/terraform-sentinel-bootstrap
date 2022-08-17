@@ -1,4 +1,5 @@
 terraform {
+
   required_providers {
     tfe = {
       source = "hashicorp/tfe"
@@ -7,6 +8,6 @@ terraform {
   }
 }
 
-provider "tfe" {
-  # Configuration options
-}
+# provider "tfe" {
+#   # Configuration options
+# }
