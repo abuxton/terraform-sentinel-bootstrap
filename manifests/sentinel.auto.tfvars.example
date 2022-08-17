@@ -1,0 +1,4 @@
+#global                      = false
+#org_name                    = null
+#tfe_workspace               = null
+#organizations_workspace_ids = null
