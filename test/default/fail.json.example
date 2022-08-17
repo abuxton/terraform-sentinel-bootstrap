@@ -1,12 +1,5 @@
 {
-    "global": {
-        "day": "monday",
-        "hour": 9
-    },
-
     "test": {
         "main": true,
-        "is_open_hours": true,
-        "is_weekday": true
     }
 }
