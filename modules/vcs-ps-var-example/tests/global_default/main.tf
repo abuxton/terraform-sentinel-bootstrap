@@ -13,5 +13,5 @@ resource "tfe_policy_set_parameter" "test" {
   key           = "test"
   value         = "\"a\",\"list\",\"example\""
   policy_set_id = module.sentinel.policy_set_id
-
+  sensitive     = false
 }
