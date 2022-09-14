@@ -1,7 +1,7 @@
 # https://registry.terraform.io/providers/hashicorp/tfe/latest/docs/resources/policy_set
 
 resource "tfe_policy_set" "default" {
-  name          = "global_example_vcs_policies"
+  name          = var.policy_set_name
   description   = "An example policy set pulled from VCS connection"
   organization  = var.org_name
   policies_path = var.policies_path
