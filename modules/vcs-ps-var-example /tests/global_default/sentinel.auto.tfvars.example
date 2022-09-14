@@ -1,0 +1,6 @@
+org_name                    = null
+organizations_workspace_ids = []
+tfe_oauth_client_id         = null
+vcs_project_name            = null
+vcs_user_name               = null
+policies_path               = null
