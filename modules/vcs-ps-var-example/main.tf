@@ -8,7 +8,7 @@ resource "tfe_policy_set" "default" {
   global        = true
   #workspace_ids = var.organizations_workspace_ids
   vcs_repo {
-    identifier         = "{var.vcs_user_name}/{var.vcs_project_name}"
+    identifier         = "${var.vcs_user_name}/${var.vcs_project_name}"
     branch             = "main"
     ingress_submodules = false
     oauth_token_id     = var.tfe_oauth_client_id

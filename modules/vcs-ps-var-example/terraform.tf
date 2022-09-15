@@ -1,5 +1,12 @@
 terraform {
 
+  cloud {
+    organization = "abc-vdm"
+
+    workspaces {
+      name = "sentinel-ps-with-vs-test"
+    }
+  }
   required_providers {
     tfe = {
       source = "hashicorp/tfe"

@@ -8,10 +8,13 @@ module "sentinel" {
   vcs_user_name       = var.vcs_user_name
   policies_path       = var.policies_path
 }
-
+locals {
+  alist = ["a", "list", "example"]
+}
 resource "tfe_policy_set_parameter" "test" {
-  key           = "test"
-  value         = "\"a\",\"list\",\"example\""
+  key = "test"
+  #value = "\"a\",\"list\",\"example\""
+  value         = jsonencode(local.alist)
   policy_set_id = module.sentinel.policy_set_id
   sensitive     = false
 }
